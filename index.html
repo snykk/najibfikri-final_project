@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Website Portofolio</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,9 +12,9 @@
         theme: {
           extend: {
             gridTemplateColumns: {
-              homeGridExtraSmall: "0.35fr 3fr",
-              homeGridXS: "max-content 1fr 1fr",
-              homeGrid: "0.5fr 3fr",
+              heroGridExtraSmall: "0.35fr 3fr",
+              heroGridXS: "max-content 1fr 1fr",
+              heroGrid: "0.5fr 3fr",
             },
             colors: {
               primary: "#003396",
@@ -34,7 +34,6 @@
         plugins: [],
       };
     </script>
-    <title>My Website Portofolio</title>
   </head>
   <body>
     <!-- Fixed Navbar Start -->
@@ -44,7 +43,7 @@
         <div class="nav-menu" id="nav-menu">
           <ul class="grid grid-cols-[repeat(3,1fr)] gap-8 gap-x-0 md:flex md:gap-x-8">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#hero" class="nav-link">Hero</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -69,18 +68,18 @@
 
     <!-- Main Content Start -->
     <main class="main">
-      <!-- Home Section Start -->
-      <section class="home section" id="home">
+      <!-- Hero Section Start -->
+      <section class="hero section" id="hero">
         <div class="md:gap-y-20 gap-4 my-container grid">
-          <div class="grid gap-6 grid-cols-homeGrid pt-14 items-center xxs:grid-cols-homeGridExtraSmall xs:grid-cols-homeGridXS md:pt-[5.5rem] md:gap-x-8">
-            <div class="home-social order-1">
-              <a href="https://www.github.com/snykk" target="_blank" class="home-social-icon">
+          <div class="grid gap-6 grid-cols-heroGrid pt-14 items-center xxs:grid-cols-heroGridExtraSmall xs:grid-cols-heroGridXS md:pt-[5.5rem] md:gap-x-8">
+            <div class="hero-social order-1">
+              <a href="https://www.github.com/snykk" target="_blank" class="hero-social-icon">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/moh-najib-fikri/" target="_blank" class="home-social-icon">
+              <a href="https://www.linkedin.com/in/moh-najib-fikri/" target="_blank" class="hero-social-icon">
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a href="https://www.instagram.com/_najibfikri" target="_blank" class="home-social-icon">
+              <a href="https://www.instagram.com/_najibfikri" target="_blank" class="hero-social-icon">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
@@ -95,18 +94,18 @@
 
             <div class="col-[1/3] xs:col-[initial] order-3 xs:order-2">
               <h4>Web dev & cyber security enthusiast</h4>
-              <h1 class="home-title">I'm Najib <span class="text-primary">Fikri</span></h1>
-              <p class="home-description">Welcome to my simple portofolio. In this section I will describe some information about myself</p>
+              <h1 class="hero-title">I'm Najib <span class="text-primary">Fikri</span></h1>
+              <p class="hero-description">Welcome to my simple portofolio. In this section I will describe some information about myself</p>
 
-              <div class="home-contact">
-                <div class="home-contact-message">To Get More Info</div>
+              <div class="hero-contact">
+                <div class="hero-contact-message">To Get More Info</div>
                 <a href="#contact"><div>Contact Me</div></a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Home Section End -->
+      <!-- hero Section End -->
 
       <!-- About Section Start -->
       <section class="about section pb-20" id="about">
@@ -341,7 +340,7 @@
         <div class="footer-container my-container grid gap-6">
           <ul class="footer-links">
             <li>
-              <a href="#home" class="footer-link">Home</a>
+              <a href="#hero" class="footer-link">Hero</a>
             </li>
             <li>
               <a href="#about" class="footer-link">About</a>
