@@ -418,3 +418,31 @@ p {
 .footer-social-link {
   color: white;
 }
+
+/* MEDIA QUERY */
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  /* .header, */
+  .main,
+  .footer-container {
+    padding: 0;
+  }
+  .home-social {
+    transform: translateX(-6rem);
+  }
+  .my-interest-container {
+    grid-template-columns: repeat(3, 238px);
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+  .contact-inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
