@@ -236,3 +236,44 @@ p {
   top: 6px;
   right: 6px;
 }
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: var(--app-color);
+  color: #ffff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: var(--app-medium-font-weight);
+}
+
+.button:hover {
+  background-color: var(--app-color-alt);
+}
+
+.button-icon {
+  font-size: 1.2rem;
+  margin-left: var(--app-margin-0-5);
+  transition: 0.3s;
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.buttom-sm {
+  padding: 0.75rem 1rem;
+}
+
+.button-link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--app-color);
+}
+
+.button-link:hover {
+  background-color: transparent;
+  color: var(--app-color-alt);
+}
