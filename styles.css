@@ -362,3 +362,11 @@ p {
 .my-interest-description {
   margin-bottom: 1rem;
 }
+
+/* Contact */
+.contact-input {
+  background-color: var(--app-input-color);
+  color: var(--app-text-color);
+  font-family: var(--app-body-font);
+  font-size: var(--app-normal-font-size);
+}
