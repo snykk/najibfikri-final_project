@@ -139,3 +139,35 @@ p {
   margin-left: var(--app-margin-1-5);
   margin-right: var(--app-margin-1-5);
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    backdrop-filter: unset;
+  }
+
+  .nav-menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--app-body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+
+/* Nav */
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--app-small-font-size);
+  color: var(--app-title-color);
+  font-weight: var(--app-medium-font-weight);
+}
+
+.nav-link:hover {
+  color: var(--app-color);
+}
