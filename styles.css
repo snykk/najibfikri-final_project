@@ -277,3 +277,43 @@ p {
   background-color: transparent;
   color: var(--app-color-alt);
 }
+
+/* Education */
+.education-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.education-title {
+  font-size: var(--app-normal-font-size);
+  font-weight: var(--app-medium-font-weight);
+}
+
+.education-subtitle {
+  display: inline-block;
+  font-size: var(--app-small-font-size);
+  margin-bottom: var(--app-margin-1);
+}
+
+.education-period {
+  font-size: var(--app-smallest-font-size);
+  color: var(--app-text-color-light);
+  /* margin-bottom: var(--app-margin-1) */
+}
+
+.education-dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--app-color);
+  border-radius: 50%;
+}
+
+.education-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--app-color);
+  transform: translate(6px, -7px);
+}
