@@ -519,3 +519,49 @@ p {
     }
   }
 }
+
+/* For small devices */
+@media screen and (max-width: 380px) {
+  .my-container {
+    margin-left: var(--app-margin-1);
+    margin-right: var(--app-margin-1);
+  }
+
+  .nav-menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .home-social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-description {
+    font-size: 18px;
+  }
+
+  .my-interest-container {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    padding: 2rem 1rem !important;
+  }
+
+  .my-interest-description {
+    font-size: var(--app-small-font-size);
+  }
+}
+
+@media screen and (max-width: 315px) {
+  div.home-contact > div.home-contact-message {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 228px) {
+  .my-interest-container {
+    padding: 2rem 0 !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+}
