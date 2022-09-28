@@ -317,3 +317,48 @@ p {
   background-color: var(--app-color);
   transform: translate(6px, -7px);
 }
+
+/* My interest Container */
+.my-interest-container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.my-interest-content {
+  position: relative;
+  background-color: var(--app-container-color);
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(227, 221, 221, 0.15);
+  transition: 0.3s;
+}
+
+.my-interest-content:hover {
+  box-shadow: 0 4px 8px rgb(151, 133, 249);
+}
+
+.my-interest-icon {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--app-color);
+  margin-bottom: var(--app-margin-1);
+}
+
+.my-interest-title {
+  font-size: var(--app-h3-font-size);
+  margin-bottom: var(--app-margin-1);
+  font-weight: var(--app-medium-font-weight);
+}
+
+.my-interest-button {
+  cursor: pointer;
+  font-size: var(--app-small-font-size);
+}
+
+.my-interest-button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
+
+.my-interest-description {
+  margin-bottom: 1rem;
+}
