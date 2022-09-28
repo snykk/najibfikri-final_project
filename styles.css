@@ -370,3 +370,51 @@ p {
   font-family: var(--app-body-font);
   font-size: var(--app-normal-font-size);
 }
+
+/* Footer */
+.footer {
+  padding-top: 0;
+  margin-right: 0;
+}
+
+.footer-container {
+  row-gap: 3.5rem;
+}
+
+.footer-bg {
+  background-color: var(--app-container-color);
+  padding: 2rem 0 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer-link:hover {
+  color: var(--app-color-alt2);
+}
+
+.footer-social-link {
+  font-size: 1.25rem;
+  margin-right: var(--app-margin-1);
+}
+
+.footer-social-link:hover {
+  color: var(--app-color-alt2);
+}
+
+.footer-copyright {
+  font-size: var(--app-smallest-font-size);
+  text-align: center;
+  color: var(--app-text-color-light);
+  margin-top: 1rem !important;
+}
+
+.footer-link,
+.footer-social-link {
+  color: white;
+}
