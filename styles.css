@@ -1,0 +1,141 @@
+/* FONT AWESOME CDN */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* DEFINE CSS VARIABLE */
+:root {
+  /* height header */
+  --app-header-height: 3rem;
+
+  /* Color App */
+  --app-color: #003396;
+  --app-color-second: white;
+  --app-color-alt: #285fcd;
+  --app-color-alt2: #a64ed8;
+  --app-title-color: white;
+  --app-text-color: #717178;
+  --app-text-color-light: white;
+  --app-input-color: #151236;
+  --app-body-color: #07001a;
+  --app-container-color: #181536;
+
+  /* Font and Typography */
+  --app-body-font: "Josefin Sans", sans-serif;
+
+  --app-big-font-size: 2rem;
+  --app-h1-font-size: 1.5rem;
+  --app-h2-font-size: 1.25rem;
+  --app-h3-font-size: 1.125rem;
+  --app-normal-font-size: 0.938rem;
+  --app-small-font-size: 0.813rem;
+  --app-smallest-font-size: 0.75rem;
+
+  /* Font Weight */
+  --app-medium-font-weight: 500;
+  --app-semi-bold-font-weight: 600;
+
+  /* --app-/*-25 = 4px,  --app-/*-5 = 8px, ...*/
+  --app-margin-0-25: 0.25rem;
+  --app-margin-0-5: 0.5rem;
+  --app-margin-0-75: 0.75rem;
+  --app-margin-1: 1rem;
+  --app-margin-1-5: 1.5rem;
+  --app-margin-2: 2rem;
+  --app-margin-2-5: 2.5rem;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --app-big-font-size: 3rem;
+    --app-h1-font-size: 2.25rem;
+    --app-h2-font-size: 1.5rem;
+    --app-h3-font-size: 1.25rem;
+    --app-normal-font-size: 1rem;
+    --app-small-font-size: 0.875rem;
+    --app-smallest-font-size: 0.813rem;
+  }
+}
+
+/* BASE CONFIG */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--app-header-height) 0;
+  font-family: var(--app-body-font);
+  font-size: var(--app-normal-font-size);
+  background-color: var(--app-body-color);
+  color: var(--app-text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--app-title-color);
+  font-weight: var(--app-semi-bold-font-weight);
+}
+
+header {
+  backdrop-filter: blur(3px);
+}
+
+h4 {
+  color: var(--app-color-alt2);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1rem;
+}
+
+/* CSS COMPONENTS CLASS */
+.section {
+  margin-bottom: 40px;
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  font-size: var(--app-h1-font-size);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--app-small-font-size);
+  margin-bottom: var(--app-margin-2);
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+/* CSS LAYOUTIN CLASS */
+.my-container {
+  max-width: 768px;
+  margin-left: var(--app-margin-1-5);
+  margin-right: var(--app-margin-1-5);
+}
