@@ -5,7 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            gridTemplateColumns: {
+              homeGridExtraSmall: "0.35fr 3fr",
+              homeGridXS: "max-content 1fr 1fr",
+              homeGrid: "0.5fr 3fr",
+            },
+            colors: {
+              primary: "#003396",
+              secondary: "#717178",
+              appDark: "#07001a",
+              lightBlue: "#285fcd",
+              inputColor: "#151236",
+              containerColor: "#181536",
+              linkColor: "#551A8B",
+            },
+            screens: {
+              xxs: { max: "380px" },
+              xs: "568px",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <title>My Website Portofolio</title>
   </head>
   <body></body>
 </html>
