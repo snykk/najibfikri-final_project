@@ -143,6 +143,7 @@ p {
 @media screen and (max-width: 768px) {
   header {
     backdrop-filter: unset;
+    height: 3rem;
   }
 
   .nav-menu {
@@ -372,20 +373,8 @@ p {
 }
 
 /* Footer */
-.footer {
-  padding-top: 0;
-  margin-right: 0;
-}
-
 .footer-container {
   row-gap: 3.5rem;
-}
-
-.footer-bg {
-  background-color: var(--app-container-color);
-  padding: 2rem 0 1.5rem;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .footer-links {
@@ -502,9 +491,6 @@ p {
 
     .footer-container {
       grid-template-columns: repeat(3, 1fr);
-    }
-    .footer-bg {
-      padding: 3rem 0 3.5rem;
     }
 
     .footer-links {
